@@ -13,16 +13,16 @@ const Footer = () => {
             <h1>LOGO</h1>
           </div>
           <div className="footer__catalog">
-            <a href="#">Каталог</a>
-            <a href="#">о компании</a>
-            <a href="#">Индивидуальная </a>
-            <a href="#">Партнерам</a>
+            <p>Каталог</p>
+            <p>о компании</p>
+            <p>Индивидуальная </p>
+            <p>Партнерам</p>
           </div>
           <div className="footer__model">
-            <a href="#">2D, 3D модели</a>
-            <a href="#">Шоу-румы</a>
-            <a href="#">Дилерам</a>
-            <a href="#">Конфигуратор</a>
+            <p>2D, 3D модели</p>
+            <p>Шоу-румы</p>
+            <p>Дилерам</p>
+            <p>Конфигуратор</p>
           </div>
           <div className="footer__contact">
             <div className="footer__media">

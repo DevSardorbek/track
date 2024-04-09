@@ -46,7 +46,7 @@ const Hero = () => {
                 двери. Настолько прозрачных сделок с Китаем вы еще не
                 осуществляли.
               </p>
-              <a href="#">Узнать больше</a>
+              <a href="../../../public/index.html">Узнать больше</a>
             </div>
             <div className="hero__section-img">
               <img src={heroImg} alt="" />

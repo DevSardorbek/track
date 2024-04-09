@@ -13,7 +13,7 @@ const Header = () => {
 
   const links = LINKS.map((el, index) => (
     <div key={index}>
-      <a href="#">{el}</a>
+      <p>{el}</p>
     </div>
   ));
 
