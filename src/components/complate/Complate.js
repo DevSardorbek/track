@@ -38,7 +38,7 @@ const Complate = () => {
         <div className="complate__card-info">
           <h3>{el.title}</h3>
           <p>{el.desc}</p>
-          <a href="#">{el.price}</a>
+          <p>{el.price}</p>
         </div>
       </div>
     </div>
