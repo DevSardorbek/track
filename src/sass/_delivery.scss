@@ -1,0 +1,62 @@
+.delivery__section {
+  margin-top: 67px;
+  margin-bottom: 120px;
+  .delivery__title {
+    margin-bottom: 48px;
+  }
+  .delivery__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .delivery__card {
+      display: flex;
+      gap: 56px;
+      box-shadow: 0px 4px 15px 0px #0000001f;
+      padding: 32px 96px;
+      .delivery__card-info {
+        h3 {
+          font-family: Exo 2;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 25px;
+          text-align: left;
+          color: #363738;
+        }
+        span {
+          width: 86px;
+          height: 3px;
+          display: block;
+          background-color: #ffce50;
+          border-radius: 3px;
+          margin: 24px 0;
+        }
+        p {
+          font-family: Exo 2;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          color: #6b6b6c;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1140px) {
+  .delivery__section {
+    width: 100%;
+    .container {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 976px) {
+  .delivery__section {
+    .delivery__cards {
+      .delivery__card {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

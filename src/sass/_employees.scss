@@ -1,0 +1,107 @@
+.employees__section {
+  margin-top: 130px;
+  h1 {
+    font-family: Exo 2;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: left;
+    color: #363738;
+    margin-bottom: 72px;
+  }
+  .employees__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    .employees__card {
+      width: 605px;
+      height: 210px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px 0px #00000026;
+      display: flex;
+      gap: 32px;
+      transition: 0.3s;
+      &:hover {
+        box-shadow: 4px 4px 15px 4px #00000026;
+      }
+      .employees__color {
+        span {
+          display: block;
+          height: 210px;
+          width: 51px;
+          background-color: #0b7572;
+          border-radius: 10px 0 0 10px;
+        }
+      }
+      .employees__avater {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        .employees__avater-info {
+          h3 {
+            font-family: Exo 2;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: left;
+            color: #363738;
+          }
+          p {
+            font-family: Exo 2;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            text-align: left;
+            margin-top: 16px;
+            margin-bottom: 12px;
+          }
+          span {
+            width: 86px;
+            height: 3px;
+            display: block;
+            background-color: #ffce50;
+            margin-bottom: 32px;
+          }
+          .avatar__media {
+            display: flex;
+            gap: 20px;
+            img {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  .cars_img {
+    margin-top: 151px;
+    margin-bottom: 160px;
+  }
+}
+@media (max-width: 1140px) {
+  .employees__section {
+    width: 100%;
+    .container {
+      width: 100%;
+      .employees__card {
+        width: 45%;
+      }
+      .cars_img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 976px) {
+  .employees__section {
+    .employees__cards {
+      flex-direction: column;
+      .employees__card {
+        width: 100%;
+      }
+    }
+  }
+}

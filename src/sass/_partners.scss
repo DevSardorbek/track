@@ -1,0 +1,51 @@
+.partners__section {
+  .partners__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    .partners__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: 0.3s;
+      padding: 25px;
+      border-radius: 8px;
+      width: 235px;
+      img {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+      }
+      &:hover {
+        box-shadow: 0px 4px 15px 0px #0000001f;
+      }
+      h3 {
+        margin-top: 32px;
+        margin-bottom: 14px;
+        font-family: Exo 2;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: center;
+        color: #363738;
+      }
+      p {
+        color: #6b6b6c;
+        font-family: PT Sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 1140px) {
+  .partners__section {
+    width: 100%;
+    .container {
+      width: 100%;
+    }
+  }
+}

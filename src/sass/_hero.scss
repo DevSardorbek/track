@@ -1,0 +1,135 @@
+.hero__sections {
+  margin-top: 100px;
+}
+.hero__section {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  .hero__section-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+    h1 {
+      font-family: Exo 2;
+      font-size: 52px;
+      font-weight: 600;
+      line-height: 65px;
+      text-align: left;
+      color: #363738;
+    }
+    p {
+      font-family: Exo 2;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      color: #6b6b6c;
+    }
+    a {
+      font-family: Exo 2;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      color: #363738;
+      text-align: left;
+      border-bottom: 3px solid #ffce50;
+    }
+  }
+}
+.hero__cards {
+  margin-top: 67px;
+  .hero__cards__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+    box-shadow: 0px 4px 20px 0px #00000026;
+    border-radius: 20px;
+    padding: 40px 80px;
+    .hero__card {
+      width: 228px;
+      h3 {
+        font-family: Exo 2;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: left;
+        color: #363738;
+        margin-top: 24px;
+        margin-bottom: 16px;
+      }
+      p {
+        font-family: PT Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #6b6b6c;
+      }
+    }
+  }
+}
+@media (max-width: 1140px) {
+  .hero__sections {
+    width: 100%;
+    .container {
+      width: 100%;
+    }
+    width: 100%;
+    .hero__section {
+      width: 100%;
+      gap: 30px;
+      .hero__section-info {
+      }
+      .hero__section-img {
+        img {
+          width: 550px;
+          height: 400px;
+        }
+      }
+    }
+    width: 100%;
+    .container {
+      width: 100%;
+    }
+  }
+  .hero__cards {
+    width: 100%;
+    .container {
+      width: 100%;
+    }
+    .hero__cards__wrapper {
+      place-items: center;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 976px) {
+  .hero__sections {
+    .hero__section {
+      .hero__section-img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .hero__section {
+    flex-direction: column-reverse;
+
+    .hero__section-info {
+      h1 {
+        font-size: 42px;
+      }
+    }
+  }
+  .hero__cards {
+    .hero__cards__wrapper {
+      grid-template-columns: 1fr;
+      place-items: center;
+    }
+  }
+}
